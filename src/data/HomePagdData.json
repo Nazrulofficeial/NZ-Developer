@@ -4,7 +4,7 @@
     "name": "Nazrul Islam",
     "heading": "Hey! I’m Nazrul",
     "typingText": ["Shopify Expert", 1500, "I'm a Designer", 1500, "I'm a Developer", 1500],
-    "description": "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.",
+    "description": "As a Shopify expert with over five years of experience, I offer a comprehensive suite of services to build, customize, and maintain your online store. My goal is to create a modern, high-converting, and professionally designed Shopify store that aligns with your brand's identity.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
   },
@@ -14,11 +14,14 @@
       "iconBgClass": "facebook",
       "href": "https://www.facebook.com/nazrulbadhon121"
     },
-    { "icon": "fa-brands:dribbble", "iconBgClass": "dribbble", "href": "/" },
+    { 
+      "icon": "fa-brands:instagram",
+      "iconBgClass": "instagram",
+      "href": "https://www.instagram.com/nazrulbadhonoffical/" },
     {
       "icon": "fa-brands:linkedin-in",
       "iconBgClass": "linkedin",
-      "href": "/"
+      "href": "https://www.linkedin.com/in/nazrul-badhon/"
     }
   ],
   "brands": [
@@ -58,20 +61,20 @@
   "about": {
     "imgSrc": "/images/about-img.png",
     "miniTitle": "About Us",
-    "title": "I AM AVAILABLE FOR <span>UI UX DESIGN</span> PROJECTS",
-    "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    "title": "I AM AVAILABLE FOR <span>WEB DEVELOPMENT</span> PROJECTS",
+    "description": "I am a Top Rated Seller on Fiverr with over 1200+ happy clients worldwide. Specializing in Shopify, I build clean, modern, and high-converting eCommerce websites. I also develop websites using WordPress and Etsy, and offer seamless migration from Etsy to Shopify. With a strong track record and deep knowledge of eCommerce trends, I ensure each project is optimized for performance, design, and growth.",
     "funfacts": [
       {
-        "title": "Google Review",
-        "number": 280
+        "title": "Buyer Review",
+        "number": 1400
       },
       {
         "title": "Years Experience",
-        "number": 15
+        "number": 6
       },
       {
         "title": "Awward Winning",
-        "number": 49
+        "number": 27
       }
     ],
     "btnText": "Get in touch",
@@ -84,7 +87,21 @@
     },
     "allProjects": [
       {
-        "thumbUrl": "/images/popup-project-1.jpg",
+        "thumbUrl": "/images/project-01.png",
+        "title": "Website Design",
+        "subTitle": "Web Design, App Design",
+        "details": {
+          "title": "Website Design for Marketing Agency Startup",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "type": "Website",
+          "langages": "PHP, HTML, CSS, JS",
+          "platform": "Shopify",
+          "country": "USA",
+          "url": "www.shinybeard.com"
+        }
+      },
+      {
+        "thumbUrl": "/images/project-02.png",
         "title": "Website Design",
         "subTitle": "Web Design, App Design",
         "details": {
@@ -98,21 +115,7 @@
         }
       },
       {
-        "thumbUrl": "/images/popup-project-2.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
-        "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
-        }
-      },
-      {
-        "thumbUrl": "/images/popup-project-3.jpg",
+        "thumbUrl": "/images/project-03.png",
         "title": "Dashboard Design",
         "subTitle": "Web Design, App Design",
         "details": {
@@ -126,7 +129,7 @@
         }
       },
       {
-        "thumbUrl": "/images/popup-project-4.jpg",
+        "thumbUrl": "/images/project-04.png",
         "title": "Mobile App Design",
         "subTitle": "Web Design, App Design",
         "details": {
@@ -140,7 +143,7 @@
         }
       },
       {
-        "thumbUrl": "/images/popup-project-5.jpg",
+        "thumbUrl": "/images/project-05.png",
         "title": "Website Design",
         "subTitle": "Web Design, App Design",
         "details": {
@@ -154,7 +157,7 @@
         }
       },
       {
-        "thumbUrl": "/images/popup-project-6.jpg",
+        "thumbUrl": "/images/project-06.png",
         "title": "Website Design",
         "subTitle": "Web Design, App Design",
         "details": {
@@ -212,28 +215,28 @@
     },
     "allExperience": [
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
+        "designation": "eCom Web Developer",
+        "company": "FIVERR | REMOTE",
         "duration": "JAN 2019 - PRESENT",
         "jobType": "Full time",
         "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "companyDescription": "As a Top Rated Seller on Fiverr, I’ve built 1200+ custom websites using Shopify, WordPress, and Etsy. I help businesses create fast, mobile-friendly stores that convert. My services include theme customization, product setup, and third-party integrations—all tailored to client goals."
       },
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
+        "designation": "Shopify Specialist",
+        "company": "Freelance | REMOTE",
         "duration": "JAN 2019 - PRESENT",
         "jobType": "Full time",
         "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "companyDescription": "I specialize in crafting modern, responsive Shopify stores. From landing page design to speed optimization, I work with growing brands to improve their online shopping experience and boost sales. I also help set up essential marketing tools, SEO, and analytics."
       },
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
+        "designation": "Store Migration Pro",
+        "company": "IPW | REMOTE",
         "duration": "JAN 2019 - PRESENT",
         "jobType": "Full time",
         "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "companyDescription": "I help Etsy sellers build independence by launching their own Shopify stores. I manage complete migration—from importing products to setting up branding, payment gateways, and shipping. My process ensures zero downtime and minimal loss of data or SEO ranking."
       }
     ]
   },
@@ -268,7 +271,7 @@
       "title": "Let’s Discuss Your Project",
       "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
     },
-    "contactImg": "/images/contact-us.png",
+    "contactImg": "/images/contact-pro.png",
     "contactInfo": [
       { "title": "Write an e-mail", "email": "hmraz101@gmail.com" },
       { "title": "Call us", "tel": "+880 1711 7550 85" }
