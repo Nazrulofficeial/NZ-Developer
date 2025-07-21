@@ -3,7 +3,7 @@
     "imgUrl": "/images/hero-back.png",
     "name": "Nazrul Islam",
     "heading": "Hey! I’m Nazrul",
-    "typingText": ["Shopify Expert", 1500, "I'm a Designer", 1500, "I'm a Developer", 1500],
+    "typingText": ["Shopify Expert", 1500, "I'm a Designer", 1500,"I'm a Ads Expert", 1500, "I'm a Developer", 1500],
     "description": "As a Shopify expert with over five years of experience, I offer a comprehensive suite of services to build, customize, and maintain your online store. My goal is to create a modern, high-converting, and professionally designed Shopify store that aligns with your brand's identity.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
@@ -26,35 +26,35 @@
   ],
   "brands": [
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-4.png",
+      "alt": "shopify"
+    },
+    {
+      "src": "/images/brand-1.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-2.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-3.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-4.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-1.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-2.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-1.svg",
-      "alt": "Logolpsum"
-    },
-    {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-3.png",
       "alt": "Logolpsum"
     }
   ],
@@ -183,7 +183,7 @@
         "title": "Website Design",
         "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
         "icon": "bi:brush-fill",
-        "ratings": 5
+        "ratings": 5.0
       },
       {
         "imgUrl": "/images/service-02.jpg",
