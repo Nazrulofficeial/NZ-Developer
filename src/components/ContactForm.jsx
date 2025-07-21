@@ -9,39 +9,54 @@ export default function ContactForm() {
     message: '',
   });
 
-  // Handler for input field changes
-  const handleInputChange = event => {
+  // Handle form input changes
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData(prevFormData => ({
+    setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
     }));
   };
 
-  const onSubmit = async event => {
+  // Handle form submission
+  const onSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
-    const formData = new FormData(event.target);
 
-    formData.append('access_key', '6d7bc3fc-6190-43c5-8298-89ac5ef7494f');
+    const payload = {
+      access_key: '369bfd14-4168-403c-96c1-c6c158a0cea0',
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
 
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: json,
-    }).then(res => res.json());
+      const result = await response.json();
 
-    if (res.success) {
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      if (result.success) {
+        alert('✅ Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        alert(`❌ Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('❌ An unexpected error occurred. Please try again later.');
+    } finally {
       setLoading(false);
     }
   };
+
   return (
     <form id="contact-form" onSubmit={onSubmit}>
       <div className="row gx-3 gy-4">
@@ -59,6 +74,7 @@ export default function ContactForm() {
             />
           </div>
         </div>
+
         <div className="col-md-6">
           <div className="form-group">
             <label className="form-label">Your Email</label>
@@ -73,6 +89,7 @@ export default function ContactForm() {
             />
           </div>
         </div>
+
         <div className="col-12">
           <div className="form-group">
             <label className="form-label">Subject</label>
@@ -87,6 +104,7 @@ export default function ContactForm() {
             />
           </div>
         </div>
+
         <div className="col-md-12">
           <div className="form-group">
             <label className="form-label">Your message</label>
@@ -101,11 +119,13 @@ export default function ContactForm() {
             />
           </div>
         </div>
+
         <div className="col-md-12">
           <div className="send">
             <button
               className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
               type="submit"
+              disabled={loading}
             >
               {loading ? 'Sending...' : 'Send Message'}
             </button>
