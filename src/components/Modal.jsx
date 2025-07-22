@@ -25,7 +25,7 @@ export default function Modal({ modalData }) {
                 )}
                 {langages && (
                   <li className="d-flex">
-                    <span className="col-4 col-lg-3">Langages:</span>
+                    <span className="col-4 col-lg-3">Languages:</span>
                     <span>{langages}</span>
                   </li>
                 )}

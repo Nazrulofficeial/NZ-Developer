@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -9,7 +11,7 @@ export default function ContactForm() {
     message: '',
   });
 
-  // Handle form input changes
+  // Handle input changes
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -24,7 +26,7 @@ export default function ContactForm() {
     setLoading(true);
 
     const payload = {
-      access_key: '369bfd14-4168-403c-96c1-c6c158a0cea0',
+      access_key: '369bfd14-4168-403c-96c1-c6c158a0cea0', 
       name: formData.name,
       email: formData.email,
       subject: formData.subject,
@@ -44,94 +46,99 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (result.success) {
-        alert('✅ Message sent successfully!');
+        toast.success('✅ Message sent successfully!');
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        alert(`❌ Error: ${result.message}`);
+        toast.error(`❌ Error: ${result.message}`);
       }
     } catch (error) {
       console.error('Submission error:', error);
-      alert('❌ An unexpected error occurred. Please try again later.');
+      toast.error('❌ An unexpected error occurred.');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <form id="contact-form" onSubmit={onSubmit}>
-      <div className="row gx-3 gy-4">
-        <div className="col-md-6">
-          <div className="form-group">
-            <label className="form-label">Your Name</label>
-            <input
-              name="name"
-              placeholder="Name *"
-              className="form-control"
-              type="text"
-              value={formData.name}
-              onChange={handleInputChange}
-              required
-            />
+    <>
+      <form id="contact-form" onSubmit={onSubmit}>
+        <div className="row gx-3 gy-4">
+          <div className="col-md-6">
+            <div className="form-group">
+              <label className="form-label">Your Name</label>
+              <input
+                name="name"
+                placeholder="Name *"
+                className="form-control"
+                type="text"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="col-md-6">
-          <div className="form-group">
-            <label className="form-label">Your Email</label>
-            <input
-              name="email"
-              placeholder="Email *"
-              className="form-control"
-              type="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              required
-            />
+          <div className="col-md-6">
+            <div className="form-group">
+              <label className="form-label">Your Email</label>
+              <input
+                name="email"
+                placeholder="Email *"
+                className="form-control"
+                type="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="col-12">
-          <div className="form-group">
-            <label className="form-label">Subject</label>
-            <input
-              name="subject"
-              placeholder="Subject *"
-              className="form-control"
-              type="text"
-              value={formData.subject}
-              onChange={handleInputChange}
-              required
-            />
+          <div className="col-12">
+            <div className="form-group">
+              <label className="form-label">Subject</label>
+              <input
+                name="subject"
+                placeholder="Subject *"
+                className="form-control"
+                type="text"
+                value={formData.subject}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="col-md-12">
-          <div className="form-group">
-            <label className="form-label">Your message</label>
-            <textarea
-              name="message"
-              placeholder="Your message *"
-              rows={4}
-              className="form-control"
-              value={formData.message}
-              onChange={handleInputChange}
-              required
-            />
+          <div className="col-md-12">
+            <div className="form-group">
+              <label className="form-label">Your message</label>
+              <textarea
+                name="message"
+                placeholder="Your message *"
+                rows={4}
+                className="form-control"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="col-md-12">
-          <div className="send">
-            <button
-              className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
-              type="submit"
-              disabled={loading}
-            >
-              {loading ? 'Sending...' : 'Send Message'}
-            </button>
+          <div className="col-md-12">
+            <div className="send">
+              <button
+                className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
+                type="submit"
+                disabled={loading}
+              >
+                {loading ? 'Sending...' : 'Send Message'}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+
+      {/* Toast container */}
+      <ToastContainer position="top-center" autoClose={4000} />
+    </>
   );
 }

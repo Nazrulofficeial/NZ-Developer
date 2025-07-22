@@ -1,9 +1,18 @@
 {
   "hero": {
-    "imgUrl": "/images/hero-back.png",
+    "imgUrl": "/images/hero.png",
     "name": "Nazrul Islam",
     "heading": "Hey! I’m Nazrul",
-    "typingText": ["Shopify Expert", 1500, "I'm a Designer", 1500,"I'm a Ads Expert", 1500, "I'm a Developer", 1500],
+    "typingText": [
+      "Shopify Expert",
+      1500,
+      "I'm a Designer",
+      1500,
+      "I'm a Ads Expert",
+      1500,
+      "I'm a Developer",
+      1500
+    ],
     "description": "As a Shopify expert with over five years of experience, I offer a comprehensive suite of services to build, customize, and maintain your online store. My goal is to create a modern, high-converting, and professionally designed Shopify store that aligns with your brand's identity.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
@@ -14,10 +23,11 @@
       "iconBgClass": "facebook",
       "href": "https://www.facebook.com/nazrulbadhon121"
     },
-    { 
+    {
       "icon": "fa-brands:instagram",
       "iconBgClass": "instagram",
-      "href": "https://www.instagram.com/nazrulbadhonoffical/" },
+      "href": "https://www.instagram.com/nazrulbadhonoffical/"
+    },
     {
       "icon": "fa-brands:linkedin-in",
       "iconBgClass": "linkedin",
@@ -175,35 +185,35 @@
   "service": {
     "sectionHeading": {
       "miniTitle": "SERVICES",
-      "title": "Design <span>services</span> I am providing"
+      "title": "What <span>services</span> I am providing"
     },
     "allService": [
       {
-        "imgUrl": "/images/service-01.jpg",
+        "imgUrl": "/images/webdesign.png",
         "title": "Website Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+        "subTitle": "Pixel-perfect, mobile-friendly sites tailored to your brand.",
         "icon": "bi:brush-fill",
         "ratings": 5.0
       },
       {
-        "imgUrl": "/images/service-02.jpg",
-        "title": "Website Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+        "imgUrl": "/images/web-dev.png",
+        "title": "Web Development",
+        "subTitle": "Fast, secure websites built with clean code & modern tech.",
         "icon": "bi:code-square",
         "ratings": 4.5
       },
       {
-        "imgUrl": "/images/service-03.jpg",
-        "title": "SEO Marketing",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+        "imgUrl": "/images/SEO.png",
+        "title": "SEO Services",
+        "subTitle": "Boost rankings & organic traffic with proven strategies.",
         "icon": "bi:speedometer2",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-04.jpg",
-        "title": "Graphic Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:palette",
+        "imgUrl": "/images/EMAIL.png",
+        "title": "Email Marketing",
+        "subTitle": "Automated campaigns that nurture leads & drive sales.",
+        "icon": "material-symbols:stacked-email",
         "ratings": 5
       }
     ]
@@ -273,8 +283,14 @@
     },
     "contactImg": "/images/contact-pro.png",
     "contactInfo": [
-      { "title": "Write an e-mail", "email": "hmraz101@gmail.com" },
-      { "title": "Call us", "tel": "+880 1711 7550 85" }
+      {
+        "title": "Write an e-mail",
+        "email": "hmraz101@gmail.com"
+      },
+      {
+        "title": "Call us",
+        "tel": "+880 1711 7550 85"
+      }
     ]
   }
 }
